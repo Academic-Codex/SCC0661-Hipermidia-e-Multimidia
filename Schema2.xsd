@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="resumoescolar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Identificacao">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Unidade" type="xs:string"/>
+                            <xs:element name="Nome" type="xs:string"/>
+                            <xs:element name="NUSP" type="xs:string"/>
+                            <xs:element name="Ingresso" type="xs:date"/>
+                            <xs:element name="Curso" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Semestre" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Disciplina" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Codigo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]{3}[0-9]{4}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Nome" type="xs:string"/>
+                                        <xs:element name="Creditos" type="xs:integer"/>
+                                        <xs:element name="Frequencia" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Nota" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="10"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Resultado">  
+                                            <xs:simpleType>
+                                                 <xs:restriction base="xs:string">
+                                                     <xs:pattern value="A|RN|RF|RA|T|MA|I"/>
+                                                 </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                             </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ano" type="xs:integer" use="required"/>                        
+                        <xs:attribute name="periodo" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="1|2"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+     </xs:element>
+</xs:schema>
