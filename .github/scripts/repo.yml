@@ -1,5 +1,5 @@
-TITLE_1: EAP5054
-TITLE_2: Formação do Cientista Empreendedor II
+TITLE_1: SCC0661
+TITLE_2: Hipermídia e Multimídia
 SUBTITLE_1: Disciplina de graduação
 SUBTITLE_2: Material de aula, notebooks e referências.
 
@@ -8,9 +8,9 @@ ABOUT: |
 
 REFERENCIAS: |
   <ul>
-    <li>Livro A …</li>
-    <li>Artigo B …</li>
+    <li>Livro AA …</li>
+    <li>Artigo BB …</li>
   </ul>
 
-GITHUB_LINK: https://github.com/Academic-Codex/EAP5054-Formacao-Cientista-Empreendedor-II
-HERO_FILE: cientista-empreendedor-ii.png
+GITHUB_LINK: https://github.com/Academic-Codex/SCC0661-Hipermidia-E-Multimidia
+HERO_FILE: multimidia-hipermidia.png
