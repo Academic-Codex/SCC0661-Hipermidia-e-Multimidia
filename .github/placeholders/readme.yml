@@ -1,0 +1,12 @@
+REPO_TAGLINE: Multimedia systems • hypermedia • interactive content
+ASSETS_DIR: .github/readme
+CTA_TEXT: Access the full course website
+THEME: peace
+SITE_URL: https://academic-codex.github.io/SCC0661-Hipermidia-E-Multimidia
+
+BG_1: "#2A0F45"
+BG_2: "#3A1768"
+TEXT_MAIN: "#F5E9FF"
+TEXT_MUTED: "#D3BDF0"
+ACCENT: "#C77DFF"
+CARD_RADIUS: "18"
