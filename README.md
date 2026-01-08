@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://Academic-Codex.github.io/SCC0661-Hipermidia-e-Multimidia">
-    <img src=".github/readme/hero.svg?v=2026-01-08T00:13:56.775575Z" width="100%" alt="Access the course website" />
+    <img src=".github/readme/hero.svg?v=2026-01-08T00:47:48.094309Z" width="100%" alt="Access the course website" />
   </a>
 </p>
 
